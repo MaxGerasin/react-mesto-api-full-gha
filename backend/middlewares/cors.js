@@ -1,4 +1,8 @@
 const allowedCors = [
+  'https://api.mesto.maxgerasin.nomoreparties.co',
+  'http://api.mesto.maxgerasin.nomoreparties.co',
+  'https://mesto.maxgerasin.nomoreparties.co',
+  'http://mesto.maxgerasin.nomoreparties.co',
   'https://localhost:3000',
   'http://localhost:3000',
 ];
