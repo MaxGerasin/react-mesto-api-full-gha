@@ -5,7 +5,7 @@ function Card({card, onCardClick, onCardLike, onOpenConfirmDeletePopup}) {
   const { link, name, likes, owner } = card;
   const currentUser = useContext(CurrentUserContext);
   const isOwn = owner._id === currentUser._id;
-  const isLiked = likes.some((like) => like._id === currentUser._id);
+  const isLiked = likes.some((like) => like === currentUser._id);
   const cardLikeButtonClass = `card__like-button ${isLiked ? 'card__like-button_active' : ''} button`;
   const handleLikeClick = () => onCardLike(card);
   const handleDeleteClick = () => onOpenConfirmDeletePopup(card);
