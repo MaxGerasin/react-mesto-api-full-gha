@@ -12,7 +12,6 @@ const errorsMiddleware = require('./middlewares/errors');
 const corsMiddleware = require('./middlewares/cors');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-
 const app = express();
 
 const { PORT = 3000 } = process.env;
